@@ -1,8 +1,9 @@
-package com.bedrockminer.tutorial.world
+papackage com.bedrockminer.tutorial.world;
 
 import java.util.Random;
 
 import com.bedrockminer.tutorial.block.ModBlocks;
+
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -24,10 +25,10 @@ public class WorldGenSapphire implements IWorldGenerator{
 	private void generateSurface(World world, Random rand, int chunkX, int chunkZ){
 		for (int i = 0; i < 100; i++){
 			int randPosX = chunkX + rand.nextInt(16);
-			int randPosY = rand.nextInt(64);
+			int randPosY = rand.nextInt(90);
 			int randPosZ = chunkZ + rand.nextInt(16);
 
-			(new WorldGenMinable(ModBlocks.tutorialBlock, 10)).generate(world, rand, randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(ModBlocks.tutorialBlock, 13)).generate(world, rand, randPosX, randPosY, randPosZ);
 
 		}
 	}
