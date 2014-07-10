@@ -1,5 +1,8 @@
+package com.bedrockminer.tutorial.world
+
 import java.util.Random;
 
+import com.bedrockminer.tutorial.block.ModBlocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
