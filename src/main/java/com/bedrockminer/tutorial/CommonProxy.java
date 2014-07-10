@@ -20,6 +20,7 @@ public class CommonProxy {
         ModTools.init();
         ModSmelting.init();
         SapphireItems.init();
+        ModGenerators.init();
     }
 
     public void init(FMLInitializationEvent e) {
