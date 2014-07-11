@@ -29,9 +29,9 @@ public class ModTools {
 		ECCPickAxe = new ECCPickAxe(ECC).setUnlocalizedName("jasperpick").
         		setCreativeTab(Main.tabCustom).setTextureName
         		(Main.MODID + ":jasperpick");
-		ECCHoe = new ECCHoe(ECC).setUnlocalizedName("jasperpick").
+		ECCHoe = new ECCHoe(ECC).setUnlocalizedName("jasperhoe").
         		setCreativeTab(Main.tabCustom).setTextureName
-        		(Main.MODID + ":jasperpick");
+        		(Main.MODID + ":jasperhoe");
 		ECCSword = new ECCSword(ECC).setUnlocalizedName("jaspersword").
         		setCreativeTab(Main.tabCustom).setTextureName
         		(Main.MODID + ":jaspersword");
