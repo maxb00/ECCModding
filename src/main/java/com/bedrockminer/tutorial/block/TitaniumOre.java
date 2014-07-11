@@ -9,9 +9,9 @@ import net.minecraft.item.Item;
 import com.bedrockminer.tutorial.Main;
 import com.bedrockminer.tutorial.item.ModItems;
 
-public class BasicBlock extends Block {
+public class TitaniumOre extends Block {
 
-    public BasicBlock(String unlocalizedName, Material material) {
+    public TitaniumOre(String unlocalizedName, Material material) {
         super(material);
         this.setBlockName(unlocalizedName);
         this.setBlockTextureName(Main.MODID + ":" + unlocalizedName);
@@ -20,7 +20,7 @@ public class BasicBlock extends Block {
         this.setResistance(6.0F);
         this.setLightLevel(1.0F);
         this.setHarvestLevel("pickaxe", 3);
-        this.setStepSound(soundTypeMetal);
+        this.setStepSound(soundTypeStone);
     }
     public Item getItemDropped(int par1, Random rand, int par2){
 		return ModItems.tutorialItem;

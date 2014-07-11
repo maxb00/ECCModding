@@ -9,7 +9,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
 
-public class WorldGenSapphire implements IWorldGenerator{
+public class WorldGenTitanium implements IWorldGenerator{
 
 	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
 		switch(world.provider.dimensionId){
@@ -28,7 +28,7 @@ public class WorldGenSapphire implements IWorldGenerator{
 			int randPosY = rand.nextInt(90);
 			int randPosZ = chunkZ + rand.nextInt(16);
 
-			(new WorldGenMinable(ModBlocks.tutorialBlock, 13)).generate(world, rand, randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(ModBlocks.titaniumOre, 13)).generate(world, rand, randPosX, randPosY, randPosZ);
 
 		}
 	}

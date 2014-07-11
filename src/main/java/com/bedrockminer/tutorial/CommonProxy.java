@@ -6,6 +6,7 @@ import com.bedrockminer.tutorial.crafting.ModCrafting;
 import com.bedrockminer.tutorial.item.ModItems;
 import com.bedrockminer.tutorial.smelting.ModSmelting;
 import com.bedrockminer.tutorial.tools.ModTools;
+import com.bedrockminer.tutorial.world.ModGenerators;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
