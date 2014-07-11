@@ -23,7 +23,7 @@ public class TitaniumOre extends Block {
         this.setStepSound(soundTypeStone);
     }
     public Item getItemDropped(int par1, Random rand, int par2){
-		return ModItems.tutorialItem;
+		return ModItems.titaniumDust;
 	}
 
 	public int quantityDropped(Random rand){

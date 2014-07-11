@@ -11,5 +11,6 @@ public class ModSmelting {
 	public static final void init(){
 		GameRegistry.addSmelting(Items.redstone, new ItemStack(Items.cake, 3), 5f);
 		GameRegistry.addSmelting(Items.diamond, new ItemStack(ModItems.tutorialItem), 1.0F);
+		GameRegistry.addSmelting(ModItems.titaniumDust, new ItemStack(ModItems.titaniumRod), 2.0f);
 	}
 }

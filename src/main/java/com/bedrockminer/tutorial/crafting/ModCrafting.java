@@ -15,6 +15,7 @@ public final class ModCrafting {
 
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.tutorialBlock), new Object[] {"##", "##", '#', ModItems.tutorialItem});
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.tutorialItem), new Object[] {Items.redstone, new ItemStack(Items.dye, 1, 4)});
+		GameRegistry.addRecipe(new ItemStack(ModItems.TitaniumIng), new Object[] {"XXX", 'X', ModItems.titaniumDust});
 	}
 
 }
