@@ -3,6 +3,8 @@ package com.bedrockminer.tutorial.tools;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class ECCHoe extends ItemHoe {
@@ -28,6 +30,7 @@ public class ECCHoe extends ItemHoe {
 			flyZ=flyZ*-1;
 		}
 		player.addVelocity(flyX, flyY, flyZ);
+		player.addPotionEffect(new PotionEffect(Potion.resistance.getId(), 50, 5));
 		return item;
 	}
 
