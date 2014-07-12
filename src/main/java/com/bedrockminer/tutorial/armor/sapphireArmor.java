@@ -51,6 +51,12 @@ public class sapphireArmor extends ItemArmor{
 				player.setInvisible(true);
 			}
 		}
+		if(stack.getItem() == SapphireItems.chestplateSapphire){
+			int j = EnchantmentHelper.getEnchantmentLevel(ModEnchants.strengthBoost.effectId, stack);
+			if(j > 0){
+				player.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), 50, j-1));
+			}
+		}
 	}
 }
 	
