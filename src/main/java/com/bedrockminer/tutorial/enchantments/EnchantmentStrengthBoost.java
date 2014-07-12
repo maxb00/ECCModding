@@ -1,0 +1,25 @@
+package com.bedrockminer.tutorial.enchantments;
+
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnumEnchantmentType;
+
+public class EnchantmentStrengthBoost extends Enchantment{
+	
+	public EnchantmentStrengthBoost(int id, int rarity){
+		super(id, rarity, EnumEnchantmentType.armor_torso);
+		this.setName("strengthBoost");
+	}
+	
+	public int getMinEnchantability(int par1){
+		return 5 + (par1 - 1) * 10;
+	}
+	
+	public int getMaxEnchantability(int par1){
+		return this.getMinEnchantability(par1) + 20;
+	}
+	
+	public int getMaxLevel(){
+		return 3;
+	}
+
+}
