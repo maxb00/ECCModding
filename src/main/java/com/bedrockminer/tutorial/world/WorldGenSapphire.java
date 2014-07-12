@@ -31,6 +31,14 @@ public class WorldGenSapphire implements IWorldGenerator{
 			(new WorldGenMinable(ModBlocks.tutorialBlock, 13)).generate(world, rand, randPosX, randPosY, randPosZ);
 
 		}
+		for (int i = 0; i < 100; i++){
+			int randPosX = chunkX + rand.nextInt(16);
+			int randPosY = rand.nextInt(90);
+			int randPosZ = chunkZ + rand.nextInt(16);
+
+			(new WorldGenMinable(ModBlocks.titaniumOre, 13)).generate(world, rand, randPosX, randPosY, randPosZ);
+
+		}
 	}
 
 	private void generateNether(World world, Random rand, int i, int j) {
